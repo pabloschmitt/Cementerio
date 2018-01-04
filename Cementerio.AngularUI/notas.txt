@@ -1,0 +1,19 @@
+Este es el tutorial
+https://www.youtube.com/watch?v=MiKEGNiT2EE
+
+
+http://www.falconmasters.com/css/guia-completa-flexbox/
+
+https://thinkster.io/tutorials/building-real-world-angular-2-apps/page-layout-and-routing
+https://angular.io/guide/styleguide
+
+Estamos en este
+https://loiane.com/2017/08/angular-hide-navbar-login-page/
+
+C:\TEMP\angular-login-hide-navbar-master\angular-login-hide-navbar-ngif\src\app
+
+Varios
+https://klarsys.github.io/angular-material-icons/
+https://alligator.io/angular/flex-layout/
+
+https://coursetro.com/posts/code/110/Creating-and-Using-Angular-5-Services

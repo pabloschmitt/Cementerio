@@ -1,0 +1,66 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" opened="true">
+
+    <mat-toolbar class="user-info" color="primary">
+      <mat-toolbar-row>
+        <span>Puto Usuario</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-list>
+      <mat-list-item> opcion 1 </mat-list-item>
+      <mat-list-item> opcion 2 </mat-list-item>
+      <mat-list-item> opcion 3 laskjdghalskjd </mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <button class="hamburger" mat-button (click)="sidenav.toggle()">
+      <mat-icon class="mat-icon">menu</mat-icon>
+    </button>
+    <img src="assets/img/Ng.png">
+    Dice la Pagina
+
+    <span class="space-filler"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>search</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>power_settings_new</mat-icon>
+        <span>Salir</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+
+  <!--
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title class="text-muted">BOTONES</mat-card-title>
+    </mat-card-header>
+
+    <button mat-button>FLAT</button>
+    <button mat-button color="primary">FLAT PRIMARY</button>
+    <button mat-button color="accent">FLAT ACCENT</button>
+    <button mat-button color="warn">FLAT WARN</button>
+    <br><br>
+    <button mat-raised-button>RAISED</button>
+    <button mat-raised-button color="primary">RAISED PRIMARY</button>
+    <button mat-raised-button color="accent">RAISED ACCENT</button>
+    <button mat-raised-button color="warn">RAISED WARN</button>
+    <br><br>
+    <button mat-icon-button color="accent"><mat-icon>messages</mat-icon></button>
+    <button mat-fab color="warn"><mat-icon>check</mat-icon></button>
+    <button mat-mini-fab><mat-icon>check</mat-icon></button>
+  </mat-card>
+-->
+
+</mat-sidenav-container>
+
+<span class="app-action" >
+  <button mat-fab><mat-icon>check circle</mat-icon></button>
+</span>
+
+

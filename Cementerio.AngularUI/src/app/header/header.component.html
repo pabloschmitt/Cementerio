@@ -1,0 +1,96 @@
+<mat-sidenav-container *ngIf="isLoggedIn$ | async as isLoggedIn">
+
+  <mat-sidenav #sidenav mode="over" opened="true">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+
+          <button mat-button class="hamburger" (click)="sidenav.toggle()">
+              <mat-icon class="mat-icon" *ngIf="sidenav.opened != false">close</mat-icon>
+              <span>Aplicacion</span>
+            </button>
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <span class="example-fill-remaining-space"></span>
+
+    <mat-list>
+      <mat-list-item> Al de alguna Cosa </mat-list-item>
+      <mat-list-item> Otra de esas cosas sin sentido </mat-list-item>
+      <mat-list-item> La verdad no se me ocurre nada </mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+  <mat-toolbar color="primary">
+
+    <button mat-button class="hamburger" (click)="sidenav.toggle()">
+      <mat-icon class="mat-icon" *ngIf="sidenav.opened != true">menu</mat-icon>
+
+      <span>Aplicacion</span>
+    </button>
+
+    <span class="fill-remaining-space"></span>
+
+    <button mat-button [matMenuTriggerFor]="menu">
+      <span class="mat-button-wrapper">
+        <img class="user-info-img" src="http://coding.infoconex.com/Custom/Themes/Standard/src/img/logo.png" alt="User">
+      </span>
+    </button>
+    <mat-menu #menu="matMenu" yPosition="below">
+
+      <button mat-menu-item>
+
+        <img class="mat-button-wrapper user-info-img" src="http://coding.infoconex.com/Custom/Themes/Standard/src/img/logo.png" alt="User">
+
+        <span>Usuario: Pablo schmitt</span>
+
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar sesión</span>
+      </button>
+
+    </mat-menu>
+
+  </mat-toolbar>
+
+  <!--
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title class="text-muted">BOTONES</mat-card-title>
+    </mat-card-header>
+
+    <button mat-button>FLAT</button>
+    <button mat-button color="primary">FLAT PRIMARY</button>
+    <button mat-button color="accent">FLAT ACCENT</button>
+    <button mat-button color="warn">FLAT WARN</button>
+
+    <mat-card-actions>
+
+    </mat-card-actions>
+
+  </mat-card>
+-->
+
+<router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+
+
+</mat-sidenav-container>
+
+<!--
+<ngc-float-button icon="add" class="fab-buttom-menu">
+    <ngc-float-item-button icon="person_add" content="float item 1"></ngc-float-item-button>
+    <ngc-float-item-button icon="gps_fixed" content="float item 2"></ngc-float-item-button>
+    <ngc-float-item-button icon="mode_edit" content="float item 3"></ngc-float-item-button>
+</ngc-float-button>
+
+<button mat-mini-fab class="fab-buttom-menu">
+    <mat-icon>favorite</mat-icon>
+  </button>
+-->

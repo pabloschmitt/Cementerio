@@ -1,0 +1,75 @@
+
+/* CONTENERDOR PRINCIPAL */
+
+mat-sidenav-container {
+  background-color: #efefef;
+  min-height: 100vh;
+}
+
+.space-filler {
+  flex: 1 1 auto;
+}
+
+/* PANEL IZQUIEDO */
+mat-toolbar img {
+  height: 45px;
+  margin-right: 0.3em;
+}
+
+
+/*
+mat-sidenav {
+  max-width: 230px;
+  box-shadow: 3px 0 6px rbgba(0 , 0, 0, .24);
+}
+*/
+ /* BARRA SUPERIOR */
+
+mat-toolbar {
+  padding: 0;
+}
+
+/*
+.user-info.mat-toolbar {
+  height: 100px;
+}
+
+
+.hamburger.mat-button {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+mat-menu {
+  margin: 0.7em;
+}
+*/
+/* CONTENIDO */
+
+mat-card {
+  margin: 20px;
+}
+/*
+.space-elemts {
+  margin-left: 0.8em;
+}
+
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+mat-checkbox {
+   margin: 10px;
+}
+
+.tab-content {
+  padding: 1em;
+  min-height: 120px;
+}
+*/
