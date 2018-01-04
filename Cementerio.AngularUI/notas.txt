@@ -1,3 +1,11 @@
+cd "C:\Users\pablito\Documents\Visual Studio 2017\Projects\Cementerio\Cementerio.AngularUI"
+
+
+
+
+VARIOS
+------------------------------------------------------------------------------------------------------
+
 Este es el tutorial
 https://www.youtube.com/watch?v=MiKEGNiT2EE
 
